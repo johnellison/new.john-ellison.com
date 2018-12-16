@@ -1,0 +1,10 @@
+.callout {
+  @include material-shadow(1);
+  transition: all 0.2s ease-in-out;
+  @include breakpoint(medium) {
+    padding: 2rem;
+  }
+  &:hover {
+    @include material-shadow(3);
+  }
+}

@@ -8,6 +8,11 @@
 @include foundation-global-styles;
 @include foundation-forms;
 @include foundation-typography;
+@import 'global/typography';
+
+// Mixins
+@import 'mixins/material-shadow';
+
 
 // Grids (choose one)
 @include foundation-xy-grid-classes;
@@ -62,3 +67,9 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// Custom components
+@import 'components/callout';
+
+// Layout styles
+@import 'layout/index';

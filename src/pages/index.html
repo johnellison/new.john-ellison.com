@@ -1,153 +1,223 @@
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+<section class="welcome">
+  <div class="grid-y">
+    <div class="cell medium-8 large-6">
+      <div class="grid-x">
+        <div class="cell">
+          <img src="/assets/img/john-ellison-headshot-640.jpg" alt="John Ellison at a hackathon event" data-interchange="[/assets/img/john-ellison-headshot-640.jpg, small], [/assets/img/john-ellison-headshot-1200.jpg, medium], [/assets/img/john-ellison-headshot-1920.jpg, large]" class="welcome-image">
         </div>
       </div>
+    </div>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-            <a href="#" class="success button">Success Btn</a><br/>
-            <a href="#" class="alert button">Alert Btn</a><br/>
-            <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="https://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+    <div class="cell medium-4 large-6">
+      <div class="welcome-content grid-container">
+        <div class="grid-x">
+          <div class="cell auto"></div>
+          <div class="cell callout small-12 medium-9 medium-offset-2 large-6 large-offset-5 secondary">
+            <h1>My name is John.</h1>
+            <p class="lead">I'm a product design consultant on a mission to help people live more healthy, happy and meaningful lives.</p>
+            <p class="lead"><a href="#portfolio">Check out my portfolio</a> <br class="show-for-small-only"> or <br class="show-for-small-only"> <a href="#services"><span class="show-for-small-only">L</span><span class="hide-for-small-only">l</span>earn how I can help</a><span class="hide-for-small-only">.</span></p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<section class="story">
+    <div class="grid-x">
+      <div class="cell large-9 story-video">
+        <img src="/assets/img/video-still.jpg" alt="">
+      </div>
+      <article class="cell small-10 small-offset-1 large-6 large-offset-6  story-content">
+        <div class="callout primary">
+          <h1>This is my story.</h1>
+          <p class="lead">When I was 18, I dropped out of business school to run my first tech startup. It failed, but I learned more in that year than I did in all my years of education combined.</p>
+          <a href="#">Read more...</a>
+        </div>
+      </article>
+    </div>
+</section>
+
+<section class="portfolio">
+  <div class="portfolio-content grid-container">
+    <!-- Portfolio Heading -->
+    <div class="grid-x grid-margin-x portfolio-heading">
+      <div class="cell medium-8 medium-offset-2 large-6 large-offset-3">
+        <h2>Portfolio</h2>
+        <p class="lead">
+          Over the past ten years, I’ve worked with a variety of organizations including lean startups, large corporations, social enterprises and universities.
+        </p>
+      </div>
+    </div>
+    <!-- Portfolio Item -->
+    <div class="grid-x grid-margin-x portfolio-item" id="slide">
+      <div class="cell large-8 portfolio-item__image">
+        <img src="/assets/img/cultivate-design-sprint-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/cultivate-design-sprint-550.jpg, small], [/assets/img/cultivate-design-sprint-1100.jpg, medium]">
+      </div>
+      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
+        <h6 class="supraheading">product design</h6>
+        <h3>Lean Startup Validation</h3>
+        <p>
+          I worked with visionary vicar and entrepreneur David Lloyd at <a href="#">STN</a> in Norwich to define and validate a startup concept that emerged out of five years of rapid growth.</p>
+        <p>
+          We ran four back-to-back design sprints where we tsted with 24 users, validated problem-solution fit and identified the target market.
+        </p>
+        <a href="#">Read more...</a>
+      </article>
+    </div>
+
+    <!-- Portfolio Item -->
+    <div class="grid-x grid-margin-x portfolio-item">
+      <div class="cell large-8 portfolio-item__image">
+        <img src="/assets/img/cultivate-design-sprint-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/aha-roadmap-550.jpg, small], [/assets/img/aha-roadmap-1100.jpg, medium]">
+      </div>
+      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
+        <h6 class="supraheading">product management</h6>
+        <h3>Unified Product Strategy</h3>
+        <p>
+          As product manager of Open Town Hall, I worked with the incredible team at <a href="https://opengov.com">OpenGov</a> to create a unified product roadmap for Citizen Engagement that brought together multiple products with input from: marketing, sales, customer success, design and engineering.
+        <p>
+          We used customer interviews and competitive analysis to derive strategic priorities for a unified product suite.
+        </p>
+        <a href="#">Read more...</a>
+      </article>
+    </div>
+
+
+    <!-- Portfolio Item -->
+    <div class="grid-x grid-margin-x portfolio-item">
+      <div class="cell large-8 portfolio-item__image">
+        <img src="/assets/img/cultivate-design-sprint-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/open-town-hall-mockup-550.jpg, small], [/assets/img/open-town-hall-mockup-1100.jpg, medium]">
+      </div>
+      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
+        <h6 class="supraheading">product design</h6>
+        <h3>Product Redesign + Acquisition</h3>
+        <p>
+          As lead designer, I led a small product team through a major redesign. We identified core usability problems, iterated solutions with customers and continually released improvements into production.
+        </p>
+        <p>
+          Then I worked with the executive team to fulfill a multi-million dollar merger and acquisition with a venture-backed startup.
+        </p>
+        <a href="#">Read more...</a>
+      </article>
+    </div>
+
+
+    <!-- Portfolio Item -->
+    <div class="grid-x grid-margin-x portfolio-item">
+      <div class="cell large-8 portfolio-item__image">
+        <img src="/assets/img/design-training-workshop-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/design-training-workshop-550.jpg, small], [/assets/img/design-training-workshop-1100.jpg, medium]">
+      </div>
+      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
+        <h6 class="supraheading">research, value proposition design</h6>
+        <h3>Discovering New Business Opportunities</h3>
+        <p>
+          I worked with James Box, the Head of UX at <a href="https://clearleft.com">Clearleft</a>, to identify and target new business opportunities in the space of design education and training.
+        </p>
+        <p>
+          The outcome of my work was a pivot in business strategy towards higher-level consulting, training and mentoring.
+        </p>
+        <a href="#">Read more...</a>
+      </article>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="services">
+  <div class="services-image grid-x">
+    <div class="cell">
+      <img src="/assets/img/john-ellison-health-hacked-teaching-320.jpg" alt="John Ellison at a hackathon event" data-interchange="[/assets/img/john-ellison-health-hacked-teaching-320.jpg, small], [/assets/img/john-ellison-health-hacked-teaching-640.jpg, retina], [/assets/img/john-ellison-health-hacked-teaching-1280.jpg, medium], [/assets/img/john-ellison-health-hacked-teaching-1920.jpg, large]">
+    </div>
+  </div>
+
+  <div class="services-content grid-container">
+    <div class="grid-x">
+      <div class="cell callout medium-9 large-5 alert">
+        <h1>How can I help you?</h1>
+        <p class="lead">I work with innovative organizations to solve complex problems at scale using leading methodology:</p>
+        <ul>
+          <li><a href="/behavior-design.html">Behavior Design</a></li>
+          <li><a href="/design-sprints.html">Design Sprints</a></li>
+          <li><a href="/product-design.html">Product Design &amp; Management</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service Item -->
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6">
+        <img src="/assets/img/bates-sketch-320.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/bates-sketch-320.jpg, small], [/assets/img/bates-sketch-640.jpg, medium], [/assets/img/bates-sketch-1280.jpg, large]">
+      </div>
+      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
+        <h3>Do you have a brilliant idea for a new product?</h3>
+        <p class="lead">
+          I use <a href="#">Design Sprints</a> to take months of product work into just four days. This method that emerged out of Google Ventures and has helped companies from Slack to Lego scale successful products. I learned how to run sprints directly from <a href="https://www.jakeknapp.com">Jake Knapp</a>, the creator of the design.
+        </p>
+        <a href="#">Learn more...</a>
+      </article>
+    </div>
+
+    <!-- Service Item -->
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6">
+        <img src="/assets/img/design-sprint-lego-team-320.jpg" alt="team around a whiteboard" data-interchange="[/assets/img/design-sprint-lego-team-320.jpg, small], [/assets/img/design-sprint-lego-team-640.jpg, medium]">
+      </div>
+      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
+        <h3>Are you trying to create lasting behavior change?</h3>
+        <p class="lead">
+          I use <a href="#">Behavior Design</a>, a research-backed system out of Stanford University, to create lasting behavior change through digital products and services. I was fortunate to train directly with <a href="http://www.bjfogg.com">Dr. BJ Fogg</a> and am now the only certified Behavior Design teacher in Europe. If you're a company on a mission, we should talk.
+        </p>
+        <a href="#">Learn more...</a>
+      </article>
+    </div>
+
+    <!-- Service Item -->
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6">
+        <img src="/assets/img/team-table-320.jpg" alt="team table at design sprint bootcamp" data-interchange="[/assets/img/team-table-320.jpg, small], [/assets/img/team-table-640.jpg, medium]">
+      </div>
+      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
+        <h3>Do you have an existing product with complex challenges?</h3>
+        <p class="lead">
+          I use product design and management methods to understand problems, develop empathy and test solutions with real users. My approach is highly collaborative and multi-disciplinary. You and your stakeholders can rest assured that your product and its users are in experienced hands.
+        </p>
+        <a href="#">Learn more...</a>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<section class="clients">
+  <div class="grid-x grid-container">
+    <div class="cell large-6">
+      <h2>Clients &amp; Collaborators</h2>
+      <p class="lead">Over the past ten years, I've been fortunate to work with and for people from some amazing organizations.</p>
+    </div>
+    <div class="cell large-6">
+        <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
+          <div class="cell shrink">
+            <a href="#"><img src="/assets/img/clearleft-logo.png" alt=""></a>
+          </div>
+          <div class="cell shrink">
+            <a href="#"><img src="/assets/img/opengov-logo.png" alt=""></a>
+          </div>
+          <div class="cell shrink">
+            <a href="#"><img src="/assets/img/stanford-logo.png" alt=""></a>
+          </div>
+          <div class="cell shrink">
+            <a href="#"><img src="/assets/img/walmart-logo.png" alt=""></a>
+          </div>
+          <div class="cell shrink">
+            <a href="#"><img src="/assets/img/amazon-logo.png" alt=""></a>
+          </div>
+          <div class="cell shrink">
+            <a href="#"><img src="/assets/img/amazon-logo.png" alt=""></a>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
