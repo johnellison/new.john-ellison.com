@@ -1,0 +1,11 @@
+.site-footer {
+  padding: 1rem 0;
+  background-color: $black;
+  color: $white;
+  .menu {
+    margin: 0;
+    li a {
+      color: $white;
+    }
+  }
+}

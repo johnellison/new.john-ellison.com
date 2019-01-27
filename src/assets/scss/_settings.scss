@@ -76,14 +76,18 @@ $foundation-palette: (
   alert: #cc4b37,
 );
 $pale-gray: #F5F5F5;
+$pale-blue: #d7ecfa;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
+$yellow: #FAF8C8;
+$red: #F1C4C7;
+$green: #D6F8D8;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: Lato, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -132,8 +136,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: "Meta Serif Pro", serif;
-$header-font-weight: 700;
+$header-font-family: freight-sans-pro, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$header-font-weight: 900;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
@@ -141,20 +145,12 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 28),
-    'h2': ('font-size': 24),
-    'h3': ('font-size': 20),
-    'h4': ('font-size': 19),
-    'h5': ('font-size': 18),
-    'h6': ('font-size': 17),
-  ),
-  medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 3.157em),
+    'h2': ('font-size': 2.369em),
+    'h3': ('font-size': 1.777em),
+    'h4': ('font-size': 1.333em),
+    'h5': ('font-size': 1em),
+    'h6': ('font-size': .75em),
   ),
 );
 $header-text-rendering: optimizeLegibility;

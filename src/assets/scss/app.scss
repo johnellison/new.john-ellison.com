@@ -70,6 +70,13 @@
 
 // Custom components
 @import 'components/callout';
+@import 'components/logo-grid';
+@import 'components/team-list';
+@import 'components/site-footer';
+
 
 // Layout styles
 @import 'layout/index';
+
+// Building Blocks
+@import 'components/building-blocks/topbar-responsive';

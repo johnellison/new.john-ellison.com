@@ -1,0 +1,16 @@
+.team-list {
+  list-style: none;
+  margin: 0 0 .5rem 0;
+}
+
+.team-list__member {
+  display: inline;
+  img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100px;
+  }
+  &:not(last-child) {
+    margin-right: -.5rem;
+  }
+}

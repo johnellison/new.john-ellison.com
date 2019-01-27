@@ -1,42 +1,36 @@
 <section class="welcome">
-  <div class="grid-y">
-    <div class="cell medium-8 large-6">
-      <div class="grid-x">
-        <div class="cell">
-          <img src="/assets/img/john-ellison-headshot-640.jpg" alt="John Ellison at a hackathon event" data-interchange="[/assets/img/john-ellison-headshot-640.jpg, small], [/assets/img/john-ellison-headshot-1200.jpg, medium], [/assets/img/john-ellison-headshot-1920.jpg, large]" class="welcome-image">
-        </div>
-      </div>
+  <div class="grid-x">
+    <div class="cell">
+      <img src="/assets/img/john-ellison-headshot-640.jpg" alt="John Ellison at a hackathon event" data-interchange="[/assets/img/john-ellison-headshot-640.jpg, small], [/assets/img/john-ellison-headshot-1200.jpg, medium],[/assets/img/john-ellison-headshot-1440.jpg, large], [/assets/img/john-ellison-headshot-1920.jpg, xxlarge]" class="welcome-image">
     </div>
 
-    <div class="cell medium-4 large-6">
-      <div class="welcome-content grid-container">
-        <div class="grid-x">
-          <div class="cell auto"></div>
-          <div class="cell callout small-12 medium-9 medium-offset-2 large-6 large-offset-5 secondary">
-            <h1>My name is John.</h1>
-            <p class="lead">I'm a product design consultant on a mission to help people live more healthy, happy and meaningful lives.</p>
-            <p class="lead"><a href="#portfolio">Check out my portfolio</a> <br class="show-for-small-only"> or <br class="show-for-small-only"> <a href="#services"><span class="show-for-small-only">L</span><span class="hide-for-small-only">l</span>earn how I can help</a><span class="hide-for-small-only">.</span></p>
-          </div>
-        </div>
+  <div class="welcome-content grid-container">
+    <div class="grid-x">
+      <div class="cell auto"></div>
+      <div class="cell callout small-12 medium-9 medium-offset-2 large-6 large-offset-6 secondary">
+        <h1>My name is John</h1>
+        <p class="lead">I'm a digital product designer on a mission to help people live more healthy, happy and meaningful lives.</p>
+        <p class="lead"><a href="#portfolio">Check out my portfolio</a> <br class="show-for-small-only"> or <br class="show-for-small-only"> <a href="#services"><span class="show-for-small-only">L</span><span class="hide-for-small-only">l</span>earn how I can help</a><span class="hide-for-small-only">.</span></p>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 
 <section class="story">
-    <div class="grid-x">
-      <div class="cell large-9 story-video">
-        <img src="/assets/img/video-still.jpg" alt="">
-      </div>
-      <article class="cell small-10 small-offset-1 large-6 large-offset-6  story-content">
-        <div class="callout primary">
-          <h1>This is my story.</h1>
-          <p class="lead">When I was 18, I dropped out of business school to run my first tech startup. It failed, but I learned more in that year than I did in all my years of education combined.</p>
-          <a href="#">Read more...</a>
-        </div>
-      </article>
+  <div class="grid-x grid-container">
+    <div class="cell large-8 large-offset-4 story-video">
+      <img src="/assets/img/video-still.jpg" alt="">
     </div>
+    <article class="cell small-10 small-offset-1 large-5 story-content">
+      <div class="callout primary">
+        <h2>This is my story</h2>
+        <p class="lead">When I was 18, I dropped out of business school to run my first tech startup. It failed, but I learned more in that year than in all my years of education combined.</p>
+        <a href="/story.html">Read more...</a>
+      </div>
+    </article>
+  </div>
 </section>
 
 <section class="portfolio">
@@ -53,15 +47,31 @@
     <!-- Portfolio Item -->
     <div class="grid-x grid-margin-x portfolio-item" id="slide">
       <div class="cell large-8 portfolio-item__image">
-        <img src="/assets/img/cultivate-design-sprint-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/cultivate-design-sprint-550.jpg, small], [/assets/img/cultivate-design-sprint-1100.jpg, medium]">
+        <video src="/assets/video/cultivate-website.mov" autoplay loop playsinline></video>
       </div>
-      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
-        <h6 class="supraheading">product design</h6>
+      <article class="cell small-10 small-offset-1 large-6 large-offset-6 callout portfolio-item__content">
+         <ul class="team-list">
+           <li class="team-list__member">
+             <img src="/assets/img/cultivate-logo.svg" alt="cultivate logo">
+           </li>
+           <li class="team-list__member">
+             <img src="/assets/img/lloyd.png" alt="Dave Lloyd client">
+           </li>
+           <li class="team-list__member">
+             <img src="/assets/img/terry.png" alt="Terry Huggins SME">
+           </li>
+           <li class="team-list__member">
+             <img src="/assets/img/boxman.png" alt="james box principle UX designer">
+           </li>
+           <li class="team-list__member">
+             <img src="/assets/img/batesy.png" alt="james bates principle UI designer">
+           </li>
+         </ul>
         <h3>Lean Startup Validation</h3>
         <p>
           I worked with visionary vicar and entrepreneur David Lloyd at <a href="#">STN</a> in Norwich to define and validate a startup concept that emerged out of five years of rapid growth.</p>
         <p>
-          We ran four back-to-back design sprints where we tsted with 24 users, validated problem-solution fit and identified the target market.
+          We ran four back-to-back design sprints where we tested four prototypes with 24 users, validated problem-solution fit and identified the target market.
         </p>
         <a href="#">Read more...</a>
       </article>
@@ -69,14 +79,58 @@
 
     <!-- Portfolio Item -->
     <div class="grid-x grid-margin-x portfolio-item">
-      <div class="cell large-8 portfolio-item__image">
-        <img src="/assets/img/cultivate-design-sprint-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/aha-roadmap-550.jpg, small], [/assets/img/aha-roadmap-1100.jpg, medium]">
+      <div class="cell large-8 large-offset-4 portfolio-item__image">
+        <img src="/assets/img/aha-roadmap-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/aha-roadmap-550.jpg, small], [/assets/img/aha-roadmap-1100.jpg, medium]">
       </div>
-      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
-        <h6 class="supraheading">product management</h6>
-        <h3>Unified Product Strategy</h3>
+      <article class="cell small-10 small-offset-1 large-6 large-offset-0 callout portfolio-item__content">
+        <ul class="team-list">
+          <li class="team-list__member">
+            <img src="/assets/img/opengov-logo-bw.svg" alt="opengov logo">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/robert-vogel.jpg" alt="Robert Vogel client">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/nikhil-gupte.jpeg" alt="Lead Software Engineer at OpenGov">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/carris-rhodes.jpeg" alt="Carris Rhodes Manager of Public Engagement, Customer Success lead">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/tom-zayan.jpeg" alt="Tom Zayan Group Product Manager at OpenGov">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/ammiel-kamon.jpeg" alt="Chief Product Officer at OpenGov">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/steve-pepple.jpeg" alt="Lead Product Designer at OpenGov">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/ryan-devenish.jpeg" alt="Director of Design at OpenGov">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/jonathan-brandon.jpeg" alt="Senior Product Marketing Manager at OpenGov">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/martyn-steele.jpeg" alt="Director of Engineering at OpenGov">
+          </li>
+
+          <li class="team-list__member">
+            <img src="/assets/img/amanda-dowd.jpeg" alt="Amanda Dowd independent strategist, UX and visual designer">
+          </li>
+        </ul>
+        <h3>Product Strategy & Roadmap</h3>
         <p>
-          As product manager of Open Town Hall, I worked with the incredible team at <a href="https://opengov.com">OpenGov</a> to create a unified product roadmap for Citizen Engagement that brought together multiple products with input from: marketing, sales, customer success, design and engineering.
+          As product manager of Open Town Hall, I worked with an incredible team at <a href="https://opengov.com">OpenGov</a> to create a unified product roadmap for Citizen Engagement that brought together multiple products with input from: marketing, sales, customer success, design and engineering.
         <p>
           We used customer interviews and competitive analysis to derive strategic priorities for a unified product suite.
         </p>
@@ -90,14 +144,42 @@
       <div class="cell large-8 portfolio-item__image">
         <img src="/assets/img/cultivate-design-sprint-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/open-town-hall-mockup-550.jpg, small], [/assets/img/open-town-hall-mockup-1100.jpg, medium]">
       </div>
-      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
-        <h6 class="supraheading">product design</h6>
-        <h3>Product Redesign + Acquisition</h3>
+      <article class="cell small-10 small-offset-1 large-6 large-offset-6 callout portfolio-item__content">
+      <ul class="team-list">
+        <li class="team-list__member">
+          <img src="/assets/img/pd-logo.png" alt="peak democracy logo">
+        </li>
+
+        <li class="team-list__member">
+          <img src="/assets/img/robert-vogel.jpg" alt="Robert Vogel CEO">
+        </li>
+
+        <li class="team-list__member">
+          <img src="/assets/img/nikhil-gupte.jpeg" alt="Chief Architect at Peak Democracy">
+        </li>
+
+        <li class="team-list__member">
+          <img src="/assets/img/carris-rhodes.jpeg" alt="Carris Rhodes Manager of Public Engagement, Customer Success lead">
+        </li>
+
+        <li class="team-list__member">
+          <img src="/assets/img/mike-cohen.jpeg" alt="Mike Cohen Head of Sales at Peak Democracy">
+        </li>
+
+        <li class="team-list__member">
+          <img src="/assets/img/brian-durand.jpeg" alt="Brian Durand CTO at Peak Democracy">
+        </li>
+
+        <li class="team-list__member">
+          <img src="/assets/img/elizabeth-daugherty.jpeg" alt="Elizabeth Daugherty client support specialist at Peak Democracy">
+        </li>
+      </ul>
+        <h3>Product Redesign & Acquisition </h3>
         <p>
-          As lead designer, I led a small product team through a major redesign. We identified core usability problems, iterated solutions with customers and continually released improvements into production.
+          I led a remote product team at Peak Democracy through a major redesign and startup acquisition. We identified core usability problems, iterated solutions with customers and continually released improvements into production.
         </p>
         <p>
-          Then I worked with the executive team to fulfill a multi-million dollar merger and acquisition with a venture-backed startup.
+          Then I worked with the executive team to fulfill a multi-million dollar merger and acquisition with a venture-backed startup in Silicon Valley.
         </p>
         <a href="#">Read more...</a>
       </article>
@@ -106,12 +188,31 @@
 
     <!-- Portfolio Item -->
     <div class="grid-x grid-margin-x portfolio-item">
-      <div class="cell large-8 portfolio-item__image">
+      <div class="cell large-8 large-offset-4 portfolio-item__image">
         <img src="/assets/img/design-training-workshop-550.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/design-training-workshop-550.jpg, small], [/assets/img/design-training-workshop-1100.jpg, medium]">
       </div>
-      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
-        <h6 class="supraheading">research, value proposition design</h6>
-        <h3>Discovering New Business Opportunities</h3>
+      <article class="cell small-10 small-offset-1 large-6 large-offset-0 callout portfolio-item__content">
+        <ul class="team-list">
+          <li class="team-list__member">
+            <img src="/assets/img/clearleft-circle.jpg" alt="Clearleft logo">
+          </li>
+          <li class="team-list__member">
+            <img src="/assets/img/boxman.png" alt="james box principle UX designer">
+          </li>
+          <li class="team-list__member">
+            <img src="/assets/img/andy-parker.jpeg" alt="Andy Parker user researcher">
+          </li>
+          <li class="team-list__member">
+            <img src="/assets/img/claire-kirkland.jpeg" alt="Claire Kirkland senior project manager">
+          </li>
+          <li class="team-list__member">
+            <img src="/assets/img/richard-rutter.jpeg" alt="Rich Rutter COO">
+          </li>
+          <li class="team-list__member">
+            <img src="/assets/img/andy-budd.jpeg" alt="Andy Budd CEO">
+          </li>
+        </ul>
+        <h3>Design Training & Mentoring </h3>
         <p>
           I worked with James Box, the Head of UX at <a href="https://clearleft.com">Clearleft</a>, to identify and target new business opportunities in the space of design education and training.
         </p>
@@ -129,95 +230,152 @@
 <section class="services">
   <div class="services-image grid-x">
     <div class="cell">
-      <img src="/assets/img/john-ellison-health-hacked-teaching-320.jpg" alt="John Ellison at a hackathon event" data-interchange="[/assets/img/john-ellison-health-hacked-teaching-320.jpg, small], [/assets/img/john-ellison-health-hacked-teaching-640.jpg, retina], [/assets/img/john-ellison-health-hacked-teaching-1280.jpg, medium], [/assets/img/john-ellison-health-hacked-teaching-1920.jpg, large]">
+      <img src="/assets/img/john-ellison-health-hacked-teaching-640.jpg" alt="John Ellison at a hackathon event" data-interchange="[/assets/img/john-ellison-health-hacked-teaching-640.jpg, small], [/assets/img/john-ellison-health-hacked-teaching-1280.jpg, medium], [/assets/img/john-ellison-health-hacked-teaching-1920.jpg, large]">
     </div>
   </div>
 
   <div class="services-content grid-container">
     <div class="grid-x">
-      <div class="cell callout medium-9 large-5 alert">
-        <h1>How can I help you?</h1>
-        <p class="lead">I work with innovative organizations to solve complex problems at scale using leading methodology:</p>
-        <ul>
-          <li><a href="/behavior-design.html">Behavior Design</a></li>
-          <li><a href="/design-sprints.html">Design Sprints</a></li>
-          <li><a href="/product-design.html">Product Design &amp; Management</a></li>
-        </ul>
+      <div class="cell callout medium-9 large-7">
+        <h2>How can I help you?</h2>
+        <p class="lead">Whether you are working on a new startup or have an existing product, I'd love the opportunity to collaborate with you and your team.</p>
+        <a href="/services.html" class="lead">Read more...</a>
       </div>
-    </div>
-
-    <!-- Service Item -->
-    <div class="grid-x grid-margin-x">
-      <div class="cell large-6">
-        <img src="/assets/img/bates-sketch-320.jpg" alt="wall of sticky notes showing design process" data-interchange="[/assets/img/bates-sketch-320.jpg, small], [/assets/img/bates-sketch-640.jpg, medium], [/assets/img/bates-sketch-1280.jpg, large]">
-      </div>
-      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
-        <h3>Do you have a brilliant idea for a new product?</h3>
-        <p class="lead">
-          I use <a href="#">Design Sprints</a> to take months of product work into just four days. This method that emerged out of Google Ventures and has helped companies from Slack to Lego scale successful products. I learned how to run sprints directly from <a href="https://www.jakeknapp.com">Jake Knapp</a>, the creator of the design.
-        </p>
-        <a href="#">Learn more...</a>
-      </article>
-    </div>
-
-    <!-- Service Item -->
-    <div class="grid-x grid-margin-x">
-      <div class="cell large-6">
-        <img src="/assets/img/design-sprint-lego-team-320.jpg" alt="team around a whiteboard" data-interchange="[/assets/img/design-sprint-lego-team-320.jpg, small], [/assets/img/design-sprint-lego-team-640.jpg, medium]">
-      </div>
-      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
-        <h3>Are you trying to create lasting behavior change?</h3>
-        <p class="lead">
-          I use <a href="#">Behavior Design</a>, a research-backed system out of Stanford University, to create lasting behavior change through digital products and services. I was fortunate to train directly with <a href="http://www.bjfogg.com">Dr. BJ Fogg</a> and am now the only certified Behavior Design teacher in Europe. If you're a company on a mission, we should talk.
-        </p>
-        <a href="#">Learn more...</a>
-      </article>
-    </div>
-
-    <!-- Service Item -->
-    <div class="grid-x grid-margin-x">
-      <div class="cell large-6">
-        <img src="/assets/img/team-table-320.jpg" alt="team table at design sprint bootcamp" data-interchange="[/assets/img/team-table-320.jpg, small], [/assets/img/team-table-640.jpg, medium]">
-      </div>
-      <article class="cell small-10 small-offset-1 large-7 large-offset-5 callout portfolio-item__content">
-        <h3>Do you have an existing product with complex challenges?</h3>
-        <p class="lead">
-          I use product design and management methods to understand problems, develop empathy and test solutions with real users. My approach is highly collaborative and multi-disciplinary. You and your stakeholders can rest assured that your product and its users are in experienced hands.
-        </p>
-        <a href="#">Learn more...</a>
-      </article>
     </div>
 
   </div>
 </section>
 
-<section class="clients">
-  <div class="grid-x grid-container">
-    <div class="cell large-6">
+<section class="clients grid-container">
+  <div class="grid-x grid-margin-x grid-padding-x">
+
+    <div class="cell large-5 clients__content">
       <h2>Clients &amp; Collaborators</h2>
       <p class="lead">Over the past ten years, I've been fortunate to work with and for people from some amazing organizations.</p>
     </div>
-    <div class="cell large-6">
-        <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
-          <div class="cell shrink">
-            <a href="#"><img src="/assets/img/clearleft-logo.png" alt=""></a>
-          </div>
-          <div class="cell shrink">
-            <a href="#"><img src="/assets/img/opengov-logo.png" alt=""></a>
-          </div>
-          <div class="cell shrink">
+
+    <div class="cell large-7 clients__logos">
+        <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3 logo-grid">
+          <div class="cell shrink logo-grid__item">
             <a href="#"><img src="/assets/img/stanford-logo.png" alt=""></a>
           </div>
-          <div class="cell shrink">
+
+          <div class="cell shrink logo-grid__item">
+            <a href="#"><img src="/assets/img/bbc-logo.png" alt=""></a>
+          </div>
+
+          <div class="cell shrink logo-grid__item">
             <a href="#"><img src="/assets/img/walmart-logo.png" alt=""></a>
           </div>
-          <div class="cell shrink">
-            <a href="#"><img src="/assets/img/amazon-logo.png" alt=""></a>
+
+          <div class="cell shrink logo-grid__item">
+            <a href="#"><img src="/assets/img/opengov-logo.png" alt=""></a>
           </div>
-          <div class="cell shrink">
-            <a href="#"><img src="/assets/img/amazon-logo.png" alt=""></a>
+
+          <div class="cell shrink logo-grid__item">
+            <a href="#"><img src="/assets/img/clearleft-logo.png" alt=""></a>
+          </div>
+
+          <div class="cell shrink logo-grid__item">
+            <a href="#"><img src="/assets/img/nua-logo.png" alt=""></a>
           </div>
         </div>
     </div>
+
+
+
   </div>
 </section>
+
+<section class="testimonials">
+  <div class="grid-container testimonial">
+    <!-- Testimonial -->
+    <div class="grid-x grid-margin-x">
+      <div class="cell medium-6 large-7 callout testimonial__content">
+        <p class="lead">&ldquo;John led our company through a major product redesign. His intense focus on the needs of our customers was paralleled by his deep desire to understand our business and meet its goals...&rdquo;</p>
+        <p class="lead">&ldquo;After a few short months, he redesigned key components of our product which were applauded by multiple clients as beautiful enhancements to our legacy system.&rdquo;</p>
+        <p class="lead">
+          <strong>&mdash; Robert Vogel, CEO of Peak Democracy</strong>
+        </p>
+      </div>
+      <figure class="cell medium-6 large-7 large-offset-5 testimonial__photo">
+        <img src="/assets/img/robert-vogel-bw.jpg" alt="Robert Vogel headshot">
+        <figcaption>
+          <p>Robert is one of the most incredible people I have ever met. He quickly became a mentor and a friend. I have learned more about running a business from Robert than anyone else. He taught me the importance of showing employees how much you care, and above all, caring for yourself.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="grid-container testimonial">
+    <!-- Testimonial -->
+    <div class="grid-x grid-margin-x">
+      <div class="cell medium-6 large-7 callout testimonial__content">
+        <p class="lead">&ldquo;John led our company through a major product redesign. His intense focus on the needs of our customers was paralleled by his deep desire to understand our business and meet its goals...&rdquo;</p>
+        <p class="lead">&ldquo;After a few short months, he redesigned key components of our product which were applauded by multiple clients as beautiful enhancements to our legacy system.&rdquo;</p>
+        <p class="lead">
+          <strong>&mdash; James Box, former Head of UX at Clearleft</strong>
+        </p>
+      </div>
+      <figure class="cell medium-6 large-7 large-offset-5 testimonial__photo">
+        <figure class="cell medium-6 large-7 testimonial__photo">
+          <img src="/assets/img/james-box-head-of-ux.jpg" alt="James Box headshot">
+          <figcaption>
+            <p>James Box is a designer in a class of his own. With decades of experience, James builds trust with anyone he meets and immediately instills confidence. A significant portion of my maturity as a designer has come from working with James and learning how to solve problems like a scientist.</p>
+          </figcaption>
+      </figure>
+    </div>
+      </div>
+
+  <div class="grid-container testimonial">
+    <!-- Testimonial -->
+    <div class="grid-x grid-margin-x ">
+      <div class="cell medium-6 large-7 callout testimonial__content">
+        <p class="lead">It has been a privilege collaborating with John.  John is someone who can take a vision and is hungry to understand it, distill it, communicate it, critique it and break it down into raw commercially viable components so that the dream can start to become a reality.
+        <p class="lead"> Rarely do you find such a mix of skills in one person.  Through the intensive Design Sprint process Cultivate was able to turn into reality in a matter of weeks.  John is a ‘must have’ for your team.</p>
+        <p class="lead">
+          <strong>&mdash; Dave Lloyd, Visionary Vicar and Entrepreneur</strong>
+        </p>
+      </div>
+      <figure class="cell medium-6 large-7 large-offset-5 testimonial__photo">
+        <figure class="cell medium-6 large-7 testimonial__photo">
+          <img src="/assets/img/dave-lloyd-1080.jpg" alt="Dave Lloyd headshot">
+          <figcaption>
+            <p>Dave Lloyd is a servant leader who lives life like a Jazz musician. He is authentic, open and vulnerable. He has deep creative instincts and a keen eye for aesthetics. Working with Dave on Cultivate opened my eyes to a whole new way of approaching problems, one that is intuitive and improvised&mdash;joyful even!</p>
+          </figcaption>
+      </figure>
+    </div>
+  </div>
+
+</section>
+
+<section class="contact">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell medium-10 medium-offset-1 large-6 large-offset-3">
+        <h2>What's your story?</h2>
+        <p class="lead">I’m always interested in hearing about new projects and opportunities.</p>
+
+        <p class="lead">Let's grab a coffee or jump on a Zoom chat. You can tell me about the problems you are trying to solve. I'd love to listen and see if there's anything I can do to help.</p>
+        <p class="lead"><a href="mailto:john@john-ellison.com?subject=Saw%20Your%20Website">john@john-ellison.com</a> | 07523280060</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell auto"></div>
+      <div class="cell shrink">Copyright 2019 John Ellison</div>
+      <div class="cell shrink">
+        <ul class="menu">
+          <li><a href="#">F</a></li>
+          <li><a href="#">T</a></li>
+          <li><a href="#">L</a></li>
+        </ul>
+      </div>
+      <div class="cell auto"></div>
+    </div>
+  </div>
+</footer>

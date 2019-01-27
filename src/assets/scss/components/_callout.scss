@@ -4,7 +4,13 @@
   @include breakpoint(medium) {
     padding: 2rem;
   }
-  &:hover {
-    @include material-shadow(3);
+  &.red {
+    background-color: $red;
+  }
+  &.yellow {
+    background-color: $yellow;
+  }
+  &.green {
+    background-color: $green;
   }
 }

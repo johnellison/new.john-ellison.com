@@ -1,0 +1,139 @@
+$topbar-responsive-bg: rgba(0,0,0, 0.0);
+$topbar-responsive-animation-type: fade-in; // or use slide-down or none
+
+.top-bar-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.topbar-responsive {
+  background: $topbar-responsive-bg;
+  padding: 1rem 1.5rem;
+
+  .topbar-responsive-logo {
+    vertical-align: middle;
+    z-index: 1;
+    img {
+      width: 140px;
+    }
+  }
+
+  .menu {
+    background: $topbar-responsive-bg;
+    padding-bottom: 1.8rem;
+
+    li {
+      margin-right: 1rem;
+    }
+
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    a {
+      color: $body-font-color;
+      font-weight: 700;
+      font-variant-caps: all-small-caps;
+      letter-spacing: 2px;
+      font-size: 125%;
+      transition: all 0.15s ease-in;
+      border-bottom: 1px solid rgba(0,0,0,0);
+      &:hover {
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color;
+      }
+
+      @media screen and (max-width: 39.9375em) {
+        padding: 0.875rem 0;
+      }
+    }
+
+    .topbar-responsive-button {
+      border-color: $black;
+      padding: .5rem 1.25rem;
+      border-radius: 5000px;
+      transition: color 0.15s ease-in, border-color 0.15s ease-in;
+
+      @media screen and (max-width: 39.9375em) {
+        width: 100%;
+        margin: 0.875rem 0;
+      }
+    }
+  }
+
+   @media screen and (max-width: 39.9375em) {
+     padding: 0.75rem;
+
+    .top-bar-title {
+      position: relative;
+      width: 100%;
+
+      span {
+        position: absolute;
+        right: 0;
+        border: 1px solid $body-font-color;
+        border-radius: 5px;
+        padding: 0.25rem 0.45rem;
+        top: 35%;
+        transform: translateY(-50%);
+
+        .menu-icon {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  } to {
+    opacity:1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@include breakpoint(small only) {
+  .topbar-responsive .menu {
+    padding: 1rem 0;
+    li {
+      margin: 0;
+      text-align: center;
+    }
+  }
+  .topbar-responsive-links {
+    background-color: rgba(255,255,255,.95);
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+    width: 100%;
+
+    @if $topbar-responsive-animation-type == slide-down {
+      animation: slideDown 1s ease-in;
+    } @else if $topbar-responsive-animation-type == fade-in {
+      animation: fadeIn 1s ease-in;
+    } @else {
+      animation: none;
+    }
+  }
+}
+
+.menu-icon {
+  &:hover:after {
+    background: $body-font-color;
+    box-shadow: 0 7px 0 $body-font-color, 0 14px 0 $body-font-color;
+  }
+  &:after {
+    background: $body-font-color;
+    box-shadow: 0 7px 0 $body-font-color, 0 14px 0 $body-font-color;
+}
+
+}

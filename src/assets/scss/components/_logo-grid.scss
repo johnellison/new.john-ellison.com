@@ -1,0 +1,6 @@
+.logo-grid__item img {
+  margin-bottom: 2rem;
+  @include breakpoint(large){
+    margin-bottom: 1rem;
+  }
+}

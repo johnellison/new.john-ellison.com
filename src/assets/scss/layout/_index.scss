@@ -1,63 +1,101 @@
-section.welcome {
-  @media screen and (min-width: 475px) and (max-width: 640px) {
-    height: 90vh;
-  }
-  .grid-y {
-    height: 80vh;
-    @include breakpoint(xlarge) {
-      height: 95vh;
-    }
-  }
-  .callout {
-    padding-bottom: 3rem;
-  }
-}
-
 .welcome-image {
   width: 100%;
 }
 
-.welcome-content .cell  {
-  @include breakpoint(small) {
-    margin-top: -4rem;
+
+.welcome-content {
+  .cell {
+    @include breakpoint(small) {
+      margin-top: -4rem;
+    }
+    @include breakpoint(medium) {
+      margin-top: -10rem;
+      height: fit-content;
+      padding-bottom: 3rem;
+    }
+    @include breakpoint(large) {
+      margin: -30rem 0rem 10rem;
+    }
+    @include breakpoint(xxlarge) {
+      margin: -40rem 0rem 20rem;
+    }
   }
 }
 
-.story {
+.services-content {
+  .cell  {
+    @include breakpoint(small) {
+      margin-top: -4rem;
+    }
+    @include breakpoint(medium) {
+      margin-top: -10rem;
+      height: fit-content;
+      padding-bottom: 3rem;
+    }
+    @include breakpoint(large) {
+      margin-top: -20rem;
+    }
+    @include breakpoint(xlarge) {
+      margin-top: -25rem;
+    }
+  }
+}
+
+.story-video {
   @include breakpoint(large) {
-    margin: 0 2rem;
+    order: 2;
+    margin-top: -6rem;
+    z-index: 2;
+  }
+  @include breakpoint(xlarge) {
+    margin-top: -4rem;
   }
 }
 
 .story-content {
   margin-top: -2rem;
   @include breakpoint(large) {
-    margin-top: -4rem;
+    margin: 0;
   }
 }
 
 .story {
   padding: 4rem 0;
+  @include breakpoint(large){
+    padding: 8rem 0;
+  }
 }
 
 .portfolio {
   background-color: $pale-gray;
   padding-bottom: 4rem;
+  @include breakpoint(large) {
+    padding-bottom: 8rem;
+  }
 }
 
 .portfolio-heading {
   margin-bottom: 2rem;
   padding-top: 4rem;
+  @include breakpoint(large) {
+    padding-top: 8rem;
+  }
 }
 
 .portfolio-item__image {
   @include breakpoint(large) {
     width: 1100px;
   }
+  video {
+    width: 100%;
+  }
 }
 
 .portfolio-item {
   margin-bottom: 4rem;
+  @include breakpoint(large) {
+    margin-bottom: 8rem;
+  }
   .portfolio-item__content {
     margin-top: -2rem;
     a {
@@ -68,19 +106,47 @@ section.welcome {
     }
     @include breakpoint(large) {
       margin-top: -26rem;
-      max-height: 22rem;
+      height: fit-content;
     }
   }
 }
 
-section.services,
 section.clients {
+  background-color: $white;
+}
+
+.clients__content {
+  margin-bottom: 4rem;
+  @include breakpoint(large) {
+    order: 2;
+    margin-bottom: 0;
+  }
+}
+
+section.clients,
+section.contact {
   padding: 4rem 0;
   @include breakpoint(medium) {
     padding: 6rem 0;
   }
   @include breakpoint(large) {
     padding: 8rem 0;
+  }
+  @include breakpoint(xlarge) {
+    padding: 12rem 0;
+  }
+}
+
+section.testimonials {
+  padding: 4rem 0 2rem 0;
+  @include breakpoint(medium) {
+    padding: 6rem 0 3rem 0;
+  }
+  @include breakpoint(large) {
+    padding: 8rem 0 4rem 0;
+  }
+  @include breakpoint(xlarge) {
+    padding: 12rem 0 6rem 0;
   }
 }
 
@@ -93,9 +159,6 @@ section.services {
   background: $pale-gray;
 }
 
-section.clients {
-
-}
 
 .logo-list {
   display: flex;
@@ -107,4 +170,35 @@ section.clients {
       margin-bottom: 3rem;
     }
   }
+}
+
+.logo-grid__item {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section.testimonials {
+  background: $pale-gray;
+}
+
+.testimonial {
+  margin-bottom: 4rem;
+
+  @include breakpoint(large) {
+    margin-bottom: 8rem;
+
+  }
+}
+
+.testimonial__photo {
+  @include breakpoint(large) {
+    margin-top: -8rem;
+  }
+  img {
+    margin-bottom: .5rem;
+  }
+}
+
+section.contact {
+  background-color: $pale-blue; 
 }
