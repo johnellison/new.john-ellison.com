@@ -1,5 +1,6 @@
 .welcome-image {
   width: 100%;
+  @include material-shadow(1);
 }
 
 
@@ -54,6 +55,7 @@
 
 .story-content {
   margin-top: -2rem;
+  z-index: 2;
   @include breakpoint(large) {
     margin: 0;
   }
@@ -79,35 +81,6 @@
   padding-top: 4rem;
   @include breakpoint(large) {
     padding-top: 8rem;
-  }
-}
-
-.portfolio-item__image {
-  @include breakpoint(large) {
-    width: 1100px;
-  }
-  video {
-    width: 100%;
-  }
-}
-
-.portfolio-item {
-  margin-bottom: 4rem;
-  @include breakpoint(large) {
-    margin-bottom: 8rem;
-  }
-  .portfolio-item__content {
-    margin-top: -2rem;
-    a {
-      font-size: 112.5%;
-    }
-    @include breakpoint(medium) {
-      margin-top: -4rem;
-    }
-    @include breakpoint(large) {
-      margin-top: -26rem;
-      height: fit-content;
-    }
   }
 }
 
@@ -157,6 +130,10 @@ section.services {
 
 section.services {
   background: $pale-gray;
+  padding-bottom: 4rem;
+  @include breakpoint(large) {
+    padding-bottom: 8rem;
+  }
 }
 
 
@@ -181,24 +158,6 @@ section.testimonials {
   background: $pale-gray;
 }
 
-.testimonial {
-  margin-bottom: 4rem;
-
-  @include breakpoint(large) {
-    margin-bottom: 8rem;
-
-  }
-}
-
-.testimonial__photo {
-  @include breakpoint(large) {
-    margin-top: -8rem;
-  }
-  img {
-    margin-bottom: .5rem;
-  }
-}
-
 section.contact {
-  background-color: $pale-blue; 
+  background-color: $pale-blue;
 }

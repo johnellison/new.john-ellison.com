@@ -1,0 +1,18 @@
+.testimonial {
+  margin-bottom: 4rem;
+
+  @include breakpoint(large) {
+    margin-bottom: 8rem;
+
+  }
+}
+
+.testimonial__photo {
+  @include breakpoint(large) {
+    margin-top: -8rem;
+  }
+  img {
+    @include material-shadow(1);
+    margin-bottom: .5rem;
+  }
+}

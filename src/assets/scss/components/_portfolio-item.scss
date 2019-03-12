@@ -1,0 +1,30 @@
+.portfolio-item__image {
+  @include material-shadow(1);
+  @include breakpoint(large) {
+    width: 1100px;
+  }
+  video {
+    width: 100%;
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 4rem;
+  @include breakpoint(large) {
+    margin-bottom: 8rem;
+  }
+  .portfolio-item__content {
+    padding-top: 1.5rem;
+    margin-top: -2rem;
+    a {
+      font-size: 112.5%;
+    }
+    @include breakpoint(medium) {
+      margin-top: -4rem;
+    }
+    @include breakpoint(large) {
+      margin-top: -26rem;
+      height: fit-content;
+    }
+  }
+}

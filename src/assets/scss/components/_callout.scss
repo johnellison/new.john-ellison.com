@@ -1,5 +1,18 @@
 .callout {
-  @include material-shadow(1);
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url('/assets/img/tape-sm.svg');
+    height: 42px;
+    width: 131px;
+    display: block;
+  }
+  @include material-shadow(2);
   transition: all 0.2s ease-in-out;
   @include breakpoint(medium) {
     padding: 2rem;

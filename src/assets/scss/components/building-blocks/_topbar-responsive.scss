@@ -15,6 +15,10 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     z-index: 1;
     img {
       width: 140px;
+      @include breakpoint(xlarge) {
+        width: 160px;
+
+      }
     }
   }
 

@@ -5,6 +5,7 @@
 
 .team-list__member {
   display: inline;
+  border-radius: 100px;
   img {
     height: 2.5rem;
     width: 2.5rem;
@@ -13,4 +14,5 @@
   &:not(last-child) {
     margin-right: -.5rem;
   }
+
 }
