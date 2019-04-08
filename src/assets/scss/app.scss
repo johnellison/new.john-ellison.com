@@ -4,14 +4,15 @@
 @import 'foundation';
 @import 'motion-ui';
 
+// Mixins
+@import 'mixins/material-shadow';
+@import 'mixins/permanent-marker';
+
 // Global styles
 @include foundation-global-styles;
 // @include foundation-forms;
 @include foundation-typography;
 @import 'global/typography';
-
-// Mixins
-@import 'mixins/material-shadow';
 
 
 // Grids (choose one)

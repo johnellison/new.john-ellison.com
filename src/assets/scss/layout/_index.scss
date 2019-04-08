@@ -5,6 +5,11 @@
 
 
 .welcome-content {
+  h1 {
+    @include permanent-marker;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
   .cell {
     @include breakpoint(small) {
       margin-top: -4rem;
@@ -21,9 +26,11 @@
       margin: -40rem 0rem 20rem;
     }
   }
+  .callout { padding-top: 2rem;}
 }
 
 .services-content {
+
   .cell  {
     @include breakpoint(small) {
       margin-top: -4rem;

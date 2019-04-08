@@ -3,15 +3,10 @@
   @include material-shadow(2);
   transition: all 0.2s ease-in-out;
   @include breakpoint(medium) {
-    padding: 2rem;
+    padding: 1.5rem 2rem 2rem 2rem;
   }
-  &.red {
-    background-color: $red;
-  }
+  background-color: $cloud-white;
   &.yellow {
     background-color: $yellow;
-  }
-  &.green {
-    background-color: $green;
   }
 }
